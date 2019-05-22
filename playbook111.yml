@@ -1,0 +1,27 @@
+---
+- name: My playbook
+  hosts: all
+  become: yes
+
+  vars:
+    message1: Privet
+    message2: All
+    secret: eefdewf
+
+  tasks:
+  - name: Print secret var
+    debug:
+      var: secret
+
+  - debug:
+      msg: "Secret var: {{ secret }}"
+
+  - debug:
+      msg: "Owner this server -->{{ owner }}<--"
+
+  - set_fact: full_message="{{ message1 }} {{ message2 }} from {{ owner }}"
+
+  - debug:
+      var: full_message
+
+

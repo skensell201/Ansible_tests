@@ -1,0 +1,2 @@
+[STAGING_SERVERS]
+linux1   ansible_host=ec2-18-218-224-107.us-east-2.compute.amazonaws.com 
