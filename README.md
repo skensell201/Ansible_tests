@@ -24,6 +24,7 @@ Parameters "host_key_checking = false" need not to check every time the key
 Parameters "inventory" responsible for the file where to get information about the servers
 
 [defaults]
+
 host_key_checking = false
 
 inventory         = ./hosts.txt
