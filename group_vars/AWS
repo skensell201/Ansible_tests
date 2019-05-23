@@ -3,4 +3,4 @@
  owner                       : IVAN KOSTIN
  ansible_user                : ubuntu
  ansible_ssh_private_key_file: /home/ubuntu/.ssh/SSH_KEY.pem
-
+ ansible_python_interpretator: /usr/bin/python2.7

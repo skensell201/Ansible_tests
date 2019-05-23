@@ -12,6 +12,9 @@
      copy: src={{ source_file }} dest={{ destin_file }} mode=0555
      notify: Restart Apache
 
+   - name: Check & Print LINUX Version
+     debug: var=ansible_os_family
+
    handlers:
    - name: Restart Apache
      service: name=apache2 state=restarted
