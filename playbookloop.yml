@@ -1,6 +1,6 @@
 ---
 - name: Loops Playbook
-  hosts: AWS
+  hosts: JENKINS
   become: yes
 
   tasks:

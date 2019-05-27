@@ -1,0 +1,9 @@
+---
+- name: PING
+  hosts: JENKINS
+  become: yes
+
+  tasks:
+ 
+  - name: Print ping
+    shell: ping
