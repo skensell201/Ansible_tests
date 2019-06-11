@@ -1,9 +1,9 @@
+#DEFAULT PING TO YOUR SERVER/SERVERS
 ---
 - name: PING
-  hosts: JENKINS
+  hosts: "{{ MYHOSTS }}"
   become: yes
 
   tasks:
- 
-  - name: Print ping
-    shell: ping
+
+  - ping:

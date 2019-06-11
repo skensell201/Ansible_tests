@@ -1,6 +1,6 @@
 ---
 - name: Install Apache2 Web Server
-  hosts: JENKINS
+  hosts: "{{ MYHOSTS }}"
   become: yes
 
   roles:
